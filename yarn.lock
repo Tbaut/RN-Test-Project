@@ -1647,12 +1647,35 @@
   dependencies:
     "@babel/runtime" "^7.17.8"
 
+"@polkadot/wasm-crypto-asmjs@^5.0.2-3":
+  version "5.0.2-3"
+  resolved "https://registry.yarnpkg.com/@polkadot/wasm-crypto-asmjs/-/wasm-crypto-asmjs-5.0.2-3.tgz#09c4c04bd4f0c23ffcc40e0b707751a7e69f0922"
+  integrity sha512-Dv3bSdRqv6bt3UlIPtws9f7c6mw/Ko1PHmlPLdseNHdGRpPSYpP8cMUW6eWusbYthUC0KJlU57CtRP46J+kDBA==
+  dependencies:
+    "@babel/runtime" "^7.17.8"
+
 "@polkadot/wasm-crypto-wasm@^5.0.1":
   version "5.0.1"
   resolved "https://registry.yarnpkg.com/@polkadot/wasm-crypto-wasm/-/wasm-crypto-wasm-5.0.1.tgz#9c011e8c6c28b9cce2994cdd5743f8720a912fff"
   integrity sha512-X0najgKPvsB3Jmx1+4EuS1c9ra9YN9m+Eo7CpQmRP3LLdcV0AfRd7PT4B8po5lZ2/a3ftTdkxOxnsqdvjb5qwA==
   dependencies:
     "@babel/runtime" "^7.17.8"
+
+"@polkadot/wasm-crypto-wasm@^5.0.2-3":
+  version "5.0.2-3"
+  resolved "https://registry.yarnpkg.com/@polkadot/wasm-crypto-wasm/-/wasm-crypto-wasm-5.0.2-3.tgz#37decf07f415e5eda3408e797698a75aecfe07fb"
+  integrity sha512-u1YwxyaLXdIWtXhECtaa8jlC3li0hDSHhNnmRR9O62E4EBiHAkZxowFiGQ56nRkI1DIQzawsAnuJYGkzdMcalg==
+  dependencies:
+    "@babel/runtime" "^7.17.8"
+
+"@polkadot/wasm-crypto@5.0.2-3":
+  version "5.0.2-3"
+  resolved "https://registry.yarnpkg.com/@polkadot/wasm-crypto/-/wasm-crypto-5.0.2-3.tgz#3ec9589df3b0848d7a8d758073cdf29ac33596bd"
+  integrity sha512-XKhwFTYGefHVD/Sp0BofnEP8EJyKFuNIn3njndvYgoQKw1ynCqtuN1x8IBL5ofgCeEutTu5ejrppg3OoGCoGxw==
+  dependencies:
+    "@babel/runtime" "^7.17.8"
+    "@polkadot/wasm-crypto-asmjs" "^5.0.2-3"
+    "@polkadot/wasm-crypto-wasm" "^5.0.2-3"
 
 "@polkadot/wasm-crypto@^5.0.1":
   version "5.0.1"

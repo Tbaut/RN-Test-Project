@@ -16,7 +16,7 @@
   "dependencies": {
     "@expo/vector-icons": "^12.0.0",
     "@polkadot/reactnative-identicon": "^1.3.1",
-    "@polkadot/wasm-crypto": "^5.0.1",
+    "@polkadot/wasm-crypto": "5.0.2-3",
     "@react-navigation/bottom-tabs": "^6.0.5",
     "@react-navigation/native": "^6.0.2",
     "@react-navigation/native-stack": "^6.1.0",
