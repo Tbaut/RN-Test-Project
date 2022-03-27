@@ -1,11 +1,18 @@
 import '@polkadot/wasm-crypto/initOnlyAsm'
-import { waitReady, bip39Generate } from '@polkadot/wasm-crypto';
+import { bip39Generate } from '@polkadot/wasm-crypto';
 
 import { View, Text } from 'react-native'
+import { cryptoWaitReady } from '@polkadot/util-crypto';
+import { useEffect } from 'react';
 
 
 export default function App() {
-  waitReady().then(() => console.log(bip39Generate(12))).catch(console.error);
+  useEffect((): void => {
+    // waitReady()
+    //   .then(() => setResult(bip39Generate(12)))
+    //   .catch(console.error);
+    cryptoWaitReady().then(() => console.log(bip39Generate(12))).catch(console.error);
+  }, []);
 
   return (
     <View>
@@ -13,3 +20,4 @@ export default function App() {
     </View>
   );
 }
+
