@@ -1,21 +1,20 @@
 {
   "name": "testproject",
   "version": "1.0.0",
-  "main": "node_modules/expo/AppEntry.js",
   "scripts": {
-    "start": "expo start",
-    "android": "expo start --android",
-    "ios": "expo start --ios",
+    "start": "expo start --dev-client --clear",
+    "android": "expo run:android",
+    "ios": "expo run:ios",
     "web": "expo start --web",
     "eject": "expo eject",
-    "test": "jest --watchAll"
+    "test": "jest --watchAll",
+    "clean": "rm -rf node_modules && yarn cache clean && yarn && watchman watch-del-all && rm -fr /tmp/haste-map-* && rm -rf /tmp/metro-cache"
   },
   "jest": {
     "preset": "jest-expo"
   },
   "dependencies": {
     "@expo/vector-icons": "^12.0.0",
-    "@polkadot/util": "^8.7.1",
     "@polkadot/util-crypto": "^8.7.1",
     "@polkadot/wasm-crypto": "^5.1.1",
     "@react-navigation/bottom-tabs": "^6.0.5",
@@ -47,8 +46,7 @@
   },
   "resolutions": {
     "@polkadot/wasm-crypto": "^5.1.1",
-    "@polkadot/util-crypto": "^8.7.1",
-    "@polkadot/util": "8.7.1"
+    "@polkadot/util-crypto": "^8.7.1"
   },
   "private": true
 }
