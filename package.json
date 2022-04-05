@@ -15,6 +15,7 @@
   },
   "dependencies": {
     "@expo/vector-icons": "^12.0.0",
+    "@polkadot/reactnative-identicon": "^1.4.1",
     "@polkadot/util-crypto": "^8.7.1",
     "@polkadot/wasm-crypto": "^5.1.1",
     "@react-navigation/bottom-tabs": "^6.0.5",
@@ -33,6 +34,8 @@
     "react-native": "0.64.3",
     "react-native-safe-area-context": "3.3.2",
     "react-native-screens": "~3.10.1",
+    "react-native-svg": "12.1.1",
+    "react-native-svg-transformer": "^1.0.0",
     "react-native-web": "0.17.1"
   },
   "devDependencies": {
