@@ -2,6 +2,7 @@ import { View, Text } from 'react-native'
 import { useEffect } from 'react';
 import { cryptoWaitReady, blake2AsHex } from '@polkadot/util-crypto';
 import Identicon from '@polkadot/reactnative-identicon';
+import { ApiPromise, WsProvider } from '@polkadot/api';
 
 export default function App() {
   useEffect((): void => {
@@ -9,6 +10,14 @@ export default function App() {
       .then(() => console.log(blake2AsHex('0x1234')))
       .catch(console.error);
   }, []);
+
+  useEffect(() => {
+    ApiPromise
+      .create({ provider: new WsProvider('wss://rpc.polkadot.io') })
+      .then((api) =>
+        api.rpc.chain.subscribeNewHeads((h) => console.log(h.number.unwrap().toHuman()))
+      );
+  }, [])
 
   return (
     <View>
