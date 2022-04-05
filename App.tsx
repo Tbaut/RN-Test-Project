@@ -4,6 +4,7 @@ import { cryptoWaitReady, blake2AsHex } from '@polkadot/util-crypto';
 import Identicon from '@polkadot/reactnative-identicon';
 import { ApiPromise, WsProvider } from '@polkadot/api';
 import { isHex } from "@polkadot/util"
+
 export default function App() {
 
   console.log("isHex:", isHex("0xdeadbeef"))
